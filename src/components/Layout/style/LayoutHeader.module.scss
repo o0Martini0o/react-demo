@@ -1,0 +1,16 @@
+@import "src/assets/styles/mixin.scss";
+
+.root {
+  background: rgb(25, 118, 210);
+  height: 90px;
+  width: 100%;
+  box-shadow: 0 3px 3px rgba(25, 118, 210, .5);
+  color: $white;
+  font-size: $h1;
+  cursor: default;
+  @include flex();
+  .lesson {
+    margin-left: .25em;
+  }
+}
+
