@@ -1,0 +1,15 @@
+@import "src/assets/styles/mixin";
+
+.root {
+  width: 100%;
+  height: 100%;
+  @include flex($justify: flex-start, $direction: column);
+  font-size: $h2;
+  padding-top: 72px;
+  .item {
+    margin-top: 36px;
+    .itemTitle {
+      margin-right: .25em;
+    }
+  }
+}
