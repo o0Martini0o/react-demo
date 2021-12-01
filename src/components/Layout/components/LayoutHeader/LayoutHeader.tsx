@@ -1,4 +1,4 @@
-import styles from '../style/LayoutHeader.module.scss'
+import styles from './LayoutHeader.module.scss'
 import { FC } from 'react'
 import { useRouter } from 'next/router'
 

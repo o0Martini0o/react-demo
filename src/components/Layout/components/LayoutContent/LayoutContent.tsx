@@ -1,4 +1,4 @@
-import styles from '../style/LayoutContent.module.scss'
+import styles from './LayoutContent.module.scss'
 import { FC } from 'react'
 
 export const LayoutContent: FC = (props) => {

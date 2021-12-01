@@ -1,4 +1,4 @@
-import styles from '../style/LayoutAside.module.scss'
+import styles from './LayoutAside.module.scss'
 import { FC } from 'react'
 import { List, ListItem } from '@mui/material'
 import { useRouter } from 'next/router'
