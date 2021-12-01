@@ -1,24 +1,23 @@
 @import "src/assets/styles/mixin";
 
 .root {
+  margin-top: 4 * $gutter;
   @include flex($direction: column);
 }
 .contentWrap {
   @include flex();
-  margin-top: $gutter-32;
+  margin-top: 4 * $gutter;
 }
 .fatherWrap {
   @include flex($direction: column);
 }
 .childWrap {
-  margin-left: $gutter-32;
+  margin-left: 4 * $gutter;
   @include flex($direction: column);
 }
 .content {
-  margin-top: 2 * $gutter-8;
-  margin-bottom: 2 * $gutter-8;
-  font-size: $h3;
-  color: $black;
+  margin-top: 2 * $gutter;
+  margin-bottom: 2 * $gutter;
   opacity: .5;
 }
 .subTitle {

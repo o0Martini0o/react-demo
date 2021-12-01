@@ -4,10 +4,13 @@ import styles from './Lesson-2.module.scss'
 
 export const Lesson2: FC = () => {
   return (
-      <div className={styles.root}>
-        <PropsAndCallback/>
-        <EventBus/>
-        {/*TODO : ref方式 , React-redux 或 React-mobx 状态管理方式 , context 上下文方式*/}
-      </div>
+      <>
+        <div className={styles.lessonTitle}>第二课:起源Component</div>
+        <div className={styles.root}>
+          <PropsAndCallback/>
+          <EventBus/>
+          {/*TODO : ref方式 , React-redux 或 React-mobx 状态管理方式 , context 上下文方式*/}
+        </div>
+      </>
   )
 }

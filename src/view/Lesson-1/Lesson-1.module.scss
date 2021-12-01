@@ -5,9 +5,9 @@
   height: 100%;
   @include flex($justify: flex-start, $direction: column);
   font-size: $h2;
-  padding-top: 72px;
+  padding-top: 4 * $gutter;
   .item {
-    margin-top: 36px;
+    margin-top: 4 * $gutter;
     .itemTitle {
       margin-right: .25em;
     }

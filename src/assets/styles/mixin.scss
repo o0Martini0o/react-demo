@@ -1,8 +1,7 @@
 $white: #ffffff;
 $black: #000000;
 
-$gutter-8: 8px;
-$gutter-32: 32px;
+$gutter: 9px;
 
 $h1: 36px;
 $h2: 24px;
@@ -22,5 +21,16 @@ $h3: 16px;
 
 .subTitle {
   font-size: $h2;
+  color: $black;
+}
+
+.lessonTitle {
+  @extend .title;
+  text-align: center;
+  margin-top: 4 * $gutter;
+}
+
+.content{
+  font-size: $h3;
   color: $black;
 }

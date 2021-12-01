@@ -94,6 +94,7 @@ export const Lesson1: FC = () => {
   }
   return (
       <>
+        <div className={styles.lessonTitle}>第一课: 认识JSX</div>
         {render()}
       </>
   )

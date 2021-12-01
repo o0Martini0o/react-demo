@@ -1,6 +1,6 @@
 import { BusService } from '@/utils/EventBus'
 import React, { FC, useState, useEffect } from 'react'
-import styles from './styles/EventBus.module.scss'
+import styles from './styles/Sample.module.scss'
 
 export const Father = () => {
   const [childSay, setChildSay] = useState<string>('')

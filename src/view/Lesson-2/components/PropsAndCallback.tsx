@@ -1,5 +1,5 @@
 import React, { useState, FC, ChangeEvent } from 'react'
-import styles from './styles/PropsAndCallback.module.scss'
+import styles from './styles/Sample.module.scss'
 
 export const Father: FC = () => {
   const [fatherSay, setFatherSay] = useState<string>('')
