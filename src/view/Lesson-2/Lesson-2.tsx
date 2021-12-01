@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
-import { EventBus, PropsAndCallback } from '@/view/LessonTwo/components'
-import styles from './LessonTwo.module.scss'
+import { EventBus, PropsAndCallback } from '@/view/Lesson-2/components'
+import styles from './Lesson-2.module.scss'
 
-export const LessonTwo: FC = () => {
+export const Lesson2: FC = () => {
   return (
       <div className={styles.root}>
         <PropsAndCallback/>

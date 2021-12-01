@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react'
 import { Button, List, ListItem } from '@mui/material'
-import styles from './LessonOne.module.scss'
+import styles from './Lesson-1.module.scss'
 
 const toLearn: string[] = ['react', 'vue', 'webpack', 'nodejs']
 
@@ -8,7 +8,7 @@ const TextComponent = (): JSX.Element => <div> hello , i am function component <
 
 const renderFoot: () => JSX.Element = () => <div> i am foot</div>
 
-export const LessonOne: FC = () => {
+export const Lesson1: FC = () => {
   const [status, setStatus] = useState(false)
   const render = () => {
     const reactElement = (
