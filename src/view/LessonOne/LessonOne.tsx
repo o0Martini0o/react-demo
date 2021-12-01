@@ -96,6 +96,5 @@ export const LessonOne: FC = () => {
       <>
         {render()}
       </>
-      
   )
 }

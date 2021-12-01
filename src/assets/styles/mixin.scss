@@ -1,6 +1,8 @@
 $white: #ffffff;
+$black: #000000;
 
 $gutter-8: 8px;
+$gutter-32: 32px;
 
 $h1: 36px;
 $h2: 24px;
@@ -11,4 +13,14 @@ $h3: 16px;
   justify-content: $justify;
   align-items: $align;
   flex-direction: $direction;
+}
+
+.title {
+  font-size: $h1;
+  color: $black;
+}
+
+.subTitle {
+  font-size: $h2;
+  color: $black;
 }

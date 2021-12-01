@@ -1,0 +1,27 @@
+@import "src/assets/styles/mixin";
+
+.root {
+  margin-top: $gutter-32;
+  @include flex($direction: column);
+}
+.contentWrap {
+  @include flex();
+  margin-top: $gutter-32;
+}
+.fatherWrap {
+  @include flex($direction: column);
+}
+.childWrap {
+  margin-left: $gutter-32;
+  @include flex($direction: column);
+}
+.content {
+  margin-top: 2 * $gutter-8;
+  margin-bottom: 2 * $gutter-8;
+  font-size: $h3;
+  color: $black;
+  opacity: .5;
+}
+.subTitle {
+  opacity: .7;
+}
