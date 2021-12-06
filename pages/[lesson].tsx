@@ -1,8 +1,7 @@
 import { FC } from 'react'
 import { useRouter } from 'next/router'
 import { Layout } from '@/components/Layout'
-import { Lesson1 } from '@/view/Lesson-1'
-import { Lesson2 } from '@/view/Lesson-2'
+import { Lesson1, Lesson2, Lesson4, Lesson5 } from '@/view'
 
 const Lesson: FC = () => {
   const router = useRouter()
@@ -13,6 +12,10 @@ const Lesson: FC = () => {
         return <Lesson1/>
       case 'lesson-two':
         return <Lesson2/>
+      case 'lesson-four':
+        return <Lesson4/>
+      case 'lesson-five':
+        return <Lesson5/>
       default:
         return <div>id not match</div>
     }

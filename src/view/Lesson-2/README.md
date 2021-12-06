@@ -5,21 +5,30 @@
 ```typescript jsx
 class Index extends React.Component {
   constructor(...arg) {
-    super(...arg)                        /* 执行 react 底层 Component 函数 */
+    /* 执行 react 底层 Component 函数 */
+    super(...arg)
   }
-  state = {}                              /* state */
-  static number = 1                       /* 内置静态属性 */
-  handleClick = () => console.log(111)     /* 方法： 箭头函数方法直接绑定在this实例上 */
-  componentDidMount() {                    /* 生命周期 */
-    console.log(Index.number, Index.number1) // 打印 1 , 2 
+  /* state */
+  state = {}
+  /* 内置静态属性 */
+  static number = 1
+  /* 方法： 箭头函数方法直接绑定在this实例上 */
+  handleClick = () => console.log(111)
+  /* 生命周期 */
+  componentDidMount() {
+    // 打印 1 , 2 
+    console.log(Index.number, Index.number1)
   }
-  render() {                               /* 渲染函数 */
+  /* 渲染函数 */
+  render() {
     return <div style={{ marginTop: '50px' }} onClick={this.handerClick}>hello,React!</div>
   }
 }
 
-Index.number1 = 2                           /* 外置静态属性 */
-Index.prototype.handleClick = () => console.log(222) /* 方法: 绑定在 Index 原型链的 方法*/
+/* 外置静态属性 */
+Index.number1 = 2
+/* 方法: 绑定在 Index 原型链的 方法*/
+Index.prototype.handleClick = () => console.log(222) 
 ```
 
 > 点击handleClick后结果为 111 , 因为class内部 , 箭头函数直接绑定在对象上 , 第二个handleClick是绑定在prototype原型链上的, 优先级顺序是 : 实例对象方法 > 原型链上的方法属性。
@@ -28,9 +37,12 @@ Index.prototype.handleClick = () => console.log(222) /* 方法: 绑定在 Index 
 
 ```typescript jsx
 const Index = () => {
-  console.log(Index.number) // 打印 1 
-  const [message, setMessage] = useState('hello,world') /* hooks  */
-  return <div onClick={() => setMessage('let us learn React!')}> {message} </div> /* 返回值 作为渲染ui */
+  // 打印 1 
+  console.log(Index.number)
+  /* hooks  */
+  const [message, setMessage] = useState('hello,world')
+  /* 返回值 作为渲染ui */
+  return <div onClick={() => setMessage('let us learn React!')}> {message} </div>
 }
 Index.number = 1 /* 绑定静态属性 */
 ```
