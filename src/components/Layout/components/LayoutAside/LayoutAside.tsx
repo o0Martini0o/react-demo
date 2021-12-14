@@ -15,6 +15,7 @@ const LessonArr: Lesson[] = [
   { title: 'lesson-there', path: '/lesson-there' },
   { title: 'lesson-four', path: '/lesson-four' },
   { title: 'lesson-five', path: '/lesson-five' },
+  { title: 'lesson-six', path: '/lesson-six' },
 ]
 
 export const LayoutAside: FC = () => {
